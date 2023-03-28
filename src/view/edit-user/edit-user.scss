@@ -1,0 +1,79 @@
+
+.link-back{
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  a{
+    text-decoration: none;
+    color:rgb(48, 47, 47);
+    &:hover{
+      color:rgb(48, 47, 47);
+    }
+  }
+}
+
+.form-update-info{
+  width: 45%;
+  margin: auto;
+  margin-bottom: 40px;
+  .title-overview{
+    margin-bottom: 20px;
+    span{
+      font-size: 25px;
+      font-weight: bolder;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+  }
+  form{
+    label{
+      font-size: 13px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
+    }
+    .input100{
+      width: 100%;
+    }
+    input{
+      border: none;
+      background-color: rgba(243, 243, 243, 0.822);
+      padding: 10px 15px;
+      margin-bottom: 13px;
+      letter-spacing: 1px;
+      font-size: 15px;
+      &:focus{
+        outline: none;
+      }
+    }
+    .checkbox{
+      margin-top: 2px;
+      margin-bottom: 10px;
+    }
+    select{
+      padding: 5px 5px;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      option{
+        font-size: 15px;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    button{
+      background-color: black;
+      color:white;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 10px 15px;
+      margin-bottom: 30px;
+    }
+  }
+}

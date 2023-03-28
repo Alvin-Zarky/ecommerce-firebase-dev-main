@@ -1,0 +1,53 @@
+
+.sign-in{
+  width: 45%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  .title-form{
+    margin-bottom: 10px;
+    span{
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+  }
+  .input-field{
+    margin-bottom: 15px;
+    label{
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: bolder;
+      letter-spacing: 1px;
+    }
+    input{
+      width: 100%;
+      padding: 7px 15px;
+      font-size: 14px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  button{
+    margin-top: 5px;
+    padding:7px 15px;
+    border: none;
+    color:white;
+    background-color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .link-page{
+    span{
+      font-size: 14px;
+      font-weight: bolder;
+      a{
+        text-decoration: none;
+        margin-left: 4px;
+      }
+    }
+  }
+}

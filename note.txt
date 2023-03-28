@@ -1,0 +1,13 @@
+Remove an existing remote project by doing
+"git remote remove origin"
+
+left the branch and create another new one by doing
+"git checkout -b main"
+
+delete the old branch name by doing
+"git branch -D main"
+
+
+move branch main to be default
+"git branch -M main"
+git push -u origin main

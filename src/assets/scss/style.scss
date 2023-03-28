@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../../node_modules/slick-carousel/slick/slick.css";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "./variable.scss";
+@import "./mixin.scss";
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x:hidden;
+}
+.maximum-width-page{
+  width: 80%;
+  margin: auto;
+  .title-overview{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+.box-err-message{
+  width: 100%;
+  background-color: rgb(221, 50, 50);
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  span{
+    color:white;
+    font-size: 15px;
+  }
+}
+.forget-password{
+  margin-top: 10px;
+  span{
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+.loading{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.input-search{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  .input-type{
+    input{
+      background: rgb(238, 238, 238);
+      padding: 5px 13px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      border:none;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .btn-search{
+    button{
+      background-color: black;
+      border: none;
+      color:white;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 6px 10px;
+    }
+  }
+}
+.pagination{
+  margin-top: 10px;
+  padding-left: 10px;
+  .prev-page, .next-page{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    svg{
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+  .box-number{
+    @extend .prev-page, .next-page;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    span{
+      font-size: 15px;
+      font-weight: bolder;
+    }
+  }
+  .active{
+    background-color: black;
+    span{
+      color:white !important;
+    }
+  }
+}
+a{
+  text-decoration: none;
+}
+.cross-icon{
+  font-size: 13px;
+  margin-top: -5px;
+  margin-left: 5px;
+  color:rgb(238, 45, 45);
+  cursor: pointer;
+}
+.blur{
+  pointer-events: none;
+  opacity: 0.5;
+}
+.is-uploading{
+  margin-top: -5px;
+  margin-bottom: 7px;
+  span{
+    font-size: 15px;
+    color: rgb(25, 175, 25);
+  }
+}

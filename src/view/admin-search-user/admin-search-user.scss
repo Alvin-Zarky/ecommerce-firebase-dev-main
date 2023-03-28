@@ -1,0 +1,57 @@
+
+.admin-user-page{
+  width: 80%;
+  margin: auto;
+  .title-user{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    span{
+      font-size: 25px;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+  }
+}
+.table-content{
+  margin-bottom: 40px;
+  tr{
+    th{
+      font-size: 13px !important;
+      text-transform: uppercase;
+    }
+    td{
+      padding-top: 11px;
+      .tick-icon{
+        font-size: 25px;
+        color: #24bb24;
+        cursor: pointer;
+        margin-top: -5px;
+      }
+      .button-function{
+        text-align: center;
+        margin-top: -2px;
+        .edit{
+          width: 40px;
+          border: none;
+          background-color: white;
+          cursor: pointer;
+        }
+        .delete{
+          width: 40px;
+          border:none;
+          background-color: rgb(221, 37, 37);
+          cursor: pointer;
+          color:white;
+        }
+      }
+    }
+  }
+}
+
+.page-pagination{
+  .pagination{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding-left: 0 !important;
+  }
+}

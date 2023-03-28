@@ -1,0 +1,218 @@
+
+.detail-page-show{
+  margin-top: 25px;
+  .error-message{
+    margin-bottom: 20px;
+    span{
+      color:rgb(247, 29, 29);
+      font-weight: bolder;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+  }
+  .link-back{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 20px;
+    a{
+      text-decoration: none;
+      color:rgb(48, 47, 47);
+    }
+  }
+  .product-view{
+    .image-for-product{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 25px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .review-product{
+      margin-bottom:10px;
+      span{
+        color:black;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+    }
+    .box-show-review{
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 3px;
+      margin-top: 10px;
+      margin-bottom: 35px;
+      background-color: rgb(97, 205, 248);
+      span{
+        color:black;
+        font-size: 15px;
+      }
+    }
+    .message-review-product{
+      margin-top: 30px;
+      .title-review{
+        @extend .review-product;
+        padding-left: 15px;
+      }
+      .permission-review{
+        @extend .box-show-review;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 60px;
+      }
+
+      form{
+        padding-left: 15px;
+        label{
+          font-weight: bolder;
+          margin-bottom: 5px;
+        }
+        select{
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          &:focus{
+            outline: none;
+          }
+        }
+        textarea{
+          width: 100%;
+          padding: 10px 15px;
+          &:focus{
+            outline: none;
+          }
+        }
+        button{
+          padding: 10px 15px;
+          background-color: black;
+          color:white;
+          text-transform: uppercase;
+          border: none;
+          font-size: 13px;
+          margin-top: 10px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .rating{
+    margin-bottom: 10px;
+    span{
+      svg{
+        margin-top: -2px;
+        color:gold;
+        cursor: pointer;
+      }
+    }
+  }
+  .show-text-detail{
+    margin-top: 40px;
+    .title-text-detail{
+      margin-bottom: 7px;
+      span{
+        font-size: 25px;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+    }
+    .rating{
+      margin-bottom: 10px;
+      span{
+        svg{
+          margin-top: -2px;
+          color:gold;
+          cursor: pointer;
+        }
+      }
+    }
+    .price-detail{
+      margin-bottom: 10px;
+    }
+  }
+
+  .disabled-box{
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    background-color: rgba(238, 238, 238, 0.5);
+    .btn-add-to-cart{
+      button{
+        background-color: rgba(238, 238, 238, 0.5);
+        pointer-events: none !important;
+        cursor: not-allowed !important;
+      }
+    }
+    .no-border{
+      border-bottom: 0 !important;
+    }
+  }
+    .box-add-to-cart{
+      margin-top: 40px;
+      border: 1px solid #ddd;
+      .amount-price, .status{
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      .quantity{
+        padding:10px;
+        select{
+          width: 50%;
+          text-align: center;
+        }
+      }
+    }
+  
+    .btn-add-to-cart{
+      width: 100%;
+      margin-top: 15px;
+      button{
+        width: 100%;
+        border: none;
+        padding: 11px;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+    }
+  
+  .box-list-review{
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    .date{
+      margin-top: -12px !important;
+    }
+    .rating{
+      margin-bottom: 0 !important;
+    }
+    .detail{
+      margin-top: 15px;
+      p{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        letter-spacing: 0.3px;
+        font-weight: bolder;
+      }
+    }
+  }
+  .box-err-msg{
+    padding-left: 15px;
+    margin-bottom: 15px;
+    .message{
+      width: 100%;
+      background-color: rgb(231, 41, 41);
+      border-radius: 5px;
+      padding: 10px 15px;
+      span{
+        color:white;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+}

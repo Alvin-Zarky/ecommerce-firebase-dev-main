@@ -1,0 +1,142 @@
+
+.bg-navbar{
+  background-color: rgb(23, 24, 32);
+  padding: 20px;
+  .active{
+    color: rgb(165, 165, 165) !important;
+    pointer-events: none;
+  }
+  .row{
+    .left-navbar{
+      display: flex;
+      align-items: center;
+      .title-navbar{
+        a{
+          text-decoration: none;
+        }
+        h3{
+          margin-top: 10px;
+          color:white;
+          font-size: 20px;
+          font-weight: bolder;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        .active{
+          h3{
+            color: rgb(165, 165, 165) !important;
+            pointer-events: none;
+          }
+        }
+      }
+      .box-search{
+        display: flex;
+        margin-left: 90px;
+          input{
+            width: 230px;
+            padding: 10px;
+            &:focus{
+              outline: none;
+            }
+          }
+          .btn-search{
+            margin-left: 10px;
+            border: 2px solid rgb(7, 92, 7);
+            padding: 10px;
+            text-align: center;
+            background: transparent;
+            cursor: pointer;
+            span{
+              color:white;
+            }
+          }
+      }
+    }
+    .right-navbar{
+      nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-top: 5px;
+        ul{
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li{
+            float: left;
+            margin-left: 10px;
+            svg{
+              margin-top: -3px;
+              margin-right:4px;
+            }
+            a{
+              display: block;
+              color: #f0f0f0;
+              padding:10px;
+              font-size: 15px;
+              text-transform: uppercase;
+              text-decoration: none;
+              &:last-child{
+                padding-right: 0;
+              }
+            }
+            .username{
+              color: white;
+              text-transform: uppercase;
+              cursor: pointer;
+              margin-top: 9px;
+              margin-left: 15px;
+              position: relative;
+              ul.sub-menu{
+                width: 140px;
+                display: inline-block;
+                background-color: white;
+                position: absolute;
+                top: 27px;
+                overflow: hidden;
+                left: 0px;
+                border: 1px solid rgb(49, 49, 49);
+                z-index: 5;
+                li{
+                  font-size: 14px;
+                  display: block;
+                  width: 100%;
+                  margin: 0;
+                  a{
+                    color:rgb(11, 82, 9);
+                    font-weight: bolder;
+                    padding-left: 20px;
+                  }
+                  .logout{
+                    color:rgb(11, 82, 9);
+                    font-weight: bolder;
+                    padding-left: 20px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                }
+                .active{
+                  background-color: black;
+                  color:white;
+                }
+              }
+            }
+          }
+          .btn-loggout{
+            padding: 6px 15px;
+            text-align: center;
+            margin-top: 2px;
+            border:2px solid white;
+            font-size: 14px;
+            text-transform: uppercase;
+            color:white;
+            cursor: pointer;
+            margin-left:10px;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}

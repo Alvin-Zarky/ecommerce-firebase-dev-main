@@ -1,0 +1,32 @@
+
+.table-content{
+  tr{
+    td{
+      .cross-icon{
+        font-size: 13px;
+        margin-top: -5px;
+        margin-left: 5px;
+        color:rgb(238, 45, 45);
+        cursor: pointer;
+      }
+      .btn-detail{
+        width: auto;
+        border:none;
+        background-color: #ddd;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 5px 10px;
+        letter-spacing: 1px;
+        font-size: 11px;
+        margin: auto;
+      }
+    }
+  }
+}
+.pagination-padd{
+  margin-top: -17px;
+  margin-bottom: 20px;
+  .pagination{
+    padding-left: 0 !important;
+  }
+}

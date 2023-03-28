@@ -1,0 +1,96 @@
+
+.profile-user{
+  width: 80%;
+  margin: auto;
+  .title-profile{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    span{
+      font-size: 25px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color:black;
+    }
+  }
+  .box-message{
+    width: 100%;
+    background-color: rgb(230, 53, 53);
+    padding:10px 15px;
+    border-radius: 5px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    span{
+      color:white;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  }
+  .box-success{
+    @extend .box-message;
+    background-color: rgb(31, 194, 31);
+  }
+  .form-user{
+    margin-bottom: 30px;
+    form{
+      label{
+        font-size: 15px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+      }
+      input{
+        width: 100%;
+        margin-bottom: 13px;
+        padding: 8px 15px;
+        font-size: 14px;
+        border: none;
+        background-color: rgb(243, 243, 243);
+        &:focus{
+          outline: none;
+        }
+      }
+      button{
+        padding: 10px 25px;
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border: none;
+      }
+    }
+  }
+
+  .order-info{
+    padding-left: 40px;
+    .table-info{
+      tr{
+        th{
+          text-transform: uppercase;
+          font-size: 13px;
+        }
+        td{
+          margin: 3px;
+          svg.tick-svg{
+            color:rgb(36, 187, 36);
+            font-size: 25px;
+            cursor: pointer;
+            margin-top: -6px;
+          }
+          button.btn-deliver{
+            font-size: 12px !important; 
+            text-transform: uppercase;
+            font-weight: bolder;
+            border: none;
+            padding: 4px 15px;
+            letter-spacing: 1px;
+            background-color: rgb(211, 211, 211);
+          }
+        }
+      }
+    }
+  }
+}
+.pagination{
+  padding-left: 0 !important;
+  margin-top: -10px;
+}
